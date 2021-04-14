@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./turn.min.js"></script>
+    <script src="./modrn.min.js"></script>
+
+    <style>
+        body{
+            background-color:#ddd;
+        }
+
+        #flipbook{
+            width:1152px;
+            height:400px;
+        }
+
+        .page{
+            background:#fff;
+            background-size: cover;
+            /* background-image:url('https://images.unsplash.com/photo-1552911126-679ae85347b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80'); */
+        }
+
+        #flipbook > div{
+            background-color: white;
+            background-size: 100% ;
+        }
+
+        #hard{
+            background-color:#ddd;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div class="page"> Turn.js </div>
+                <div class="double"> Page 0 </div>
+                <div class="double"> Page 1 </div>
+                <div class="double"> Page 2 </div>
+                <div class="double"> Page 3 </div>
+                <div class="double"> Page 4 </div>
+                <div class="double"> Page 5 </div>
+                <div class="page"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+        function loadApp() {
+
+            var flipbook = $('.flipbook');
+
+            $('.flipbook .double').scissor();
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Elevation
+                elevation: 50,
+                gradients: true,
+                autoCenter: true
+
+            });
+        }
+
+        yepnope({
+            test : Modernizr.csstransforms,
+            yep: ['./turn.min.js'],
+            both: ['./scissor.js', './double-page.css'],
+            complete: loadApp
+        });
+
+    </script>
+
+</html>
