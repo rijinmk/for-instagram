@@ -15,7 +15,7 @@
 	<key>DocPrefMainSplitterValue</key>
 	<string>730.00000000000000000000</string>
 	<key>DocPrefPlayheadTime</key>
-	<string>370</string>
+	<string>613</string>
 	<key>DocPrefPreviewAutoFit</key>
 	<integer>0</integer>
 	<key>DocPrefPreviewScaleValue</key>
@@ -30,7 +30,7 @@
 		<integer>48</integer>
 	</array>
 	<key>DocPrefWindowSizePos</key>
-	<string>0 55 1312 1002 0 0 1920 1057 </string>
+	<string>0 55 1920 1002 0 0 1920 1057 </string>
 	<key>DocPrefZoomValue</key>
 	<string>0.94802871613307926335</string>
 	<key>SaveAsStandaloneProject</key>

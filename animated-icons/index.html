@@ -5,15 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
 
-    <lord-icon src="./bi.json" trigger="hover" colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
-    </lord-icon>
+    <!-- 12-layers-outline.json -->
+    <!-- 1122-thumb-down-outline.json -->
+    <!-- 112-book-morph-outline.json -->
+    <!-- <lord-icon target=".card" src="./icons/1122-thumb-down-outline.json" trigger="hover"
+            colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
+        </lord-icon> -->
 
-    <lord-icon src="./truck.json" trigger="hover" colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
-    </lord-icon>
+    <div class="card-collection">
+        <div class="card">
+            <div class="card-icon">
+                <lord-icon target=".card" src="./icons/1122-thumb-down-outline.json" trigger="hover"
+                    colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+            <div class="card-information">
+                <h2>Unlike</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <lord-icon target=".card" src="./icons/12-layers-outline.json" trigger="hover"
+                    colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+            <div class="card-information">
+                <h2>Layers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">
+                <lord-icon target=".card" src="./icons/112-book-morph-outline.json" trigger="hover"
+                    colors="primary:#273c75,secondary:#e84118" style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+            <div class="card-information">
+                <h2>Books</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur.</p>
+            </div>
+        </div>
+    </div>
+    
 
 </body>
 </html>

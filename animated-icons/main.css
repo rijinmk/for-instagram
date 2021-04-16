@@ -1,0 +1,40 @@
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-collection{
+    margin-top:30px;
+}
+
+.card{
+    border:1px solid #ccc;
+    width:80%;
+    margin:0 auto;
+    height:150px;
+    margin-bottom:30px;
+    border-radius:20px;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.1);
+    transition:all 0.3s;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow:3px 3px 20px rgba(0,0,0,0.2);
+    transform:scale(1.1);
+}
+
+.card-information{
+    /* border:1px solid red; */
+    padding:0px 20px;
+}
+
+.card-information p{
+    font-size: 13px;
+    position: relative;
+    top:-10px;
+    padding-right: 20px;
+}
+
+
